@@ -3,6 +3,8 @@
 ### installation
      library("devtools")
      devtools::install_github("SooLee/Soo.plot.base")
+     
+### calling package before use
      library(Soo.plot.base)
 
 ### functions
