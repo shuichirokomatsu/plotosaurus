@@ -1,6 +1,6 @@
 #' A plot wrapper function.
 #'
-#' This function generates both png and pdf files for a given plot.func.
+#' This function generates both png and pdf files for a given plot function.
 #' @param plot.func Any plotting function.
 #' @param fprefix The output png and pdf file path prefix. The file names will be fprefix.date.png and fprefix.date.pdf (date: eg.20150331)
 #' @param width The width of the png and pdf file in inches. Defaults to 7.

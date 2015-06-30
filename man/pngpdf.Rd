@@ -30,7 +30,7 @@ pngpdf(plot.func, fprefix, width = 7, height = 7, pointsize = 12,
 the returned value from plot.func will be returned.
 }
 \description{
-This function generates both png and pdf files for a given plot.func.
+This function generates both png and pdf files for a given plot function.
 }
 \examples{
 pngpdf(function(){
