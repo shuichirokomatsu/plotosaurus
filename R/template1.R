@@ -9,28 +9,29 @@
 #' @export
 #' @examples
 #' template1(
-#' function(){
-#'   plot(1:10,1:10,type="o",pch=22, xlab="x",ylab="y")
-#'   points(1:10,10:1,col=2,pch=19)
-#'   points(1:10,c(9:5,5:9),col=3,pch=19)
-#' },
-#' function(){
-#'   legend(0,1,c("haha"),bty="n",pch=22,lty=1,lwd=1)
-#'   legend(0,0.8,c("lala","baba"),bty="n",pch=19, col=c(2,3))
+#'  function(){
+#'    plot(1:10,1:10,type="o",pch=22, xlab="x",ylab="y")
+#'    points(1:10,10:1,col=2,pch=19)
+#'    points(1:10,c(9:5,5:9),col=3,pch=19)
+#'  },
+#'  function(){
+#'    legend(0,1,c("haha"),bty="n",pch=22,lty=1,lwd=1)
+#'    legend(0,0.8,c("lala","baba"),bty="n",pch=19, col=c(2,3))
 #' }
-#')
-#'template1(
-#' function(){
-#'   plot(1:10,1:10,type="o",pch=22, xlab="x",ylab="y")
-#'   points(1:10,10:1,col=2,pch=19)
-#'   points(1:10,c(9:5,5:9),col=3,pch=19)
-#' },
-#' function(){
-#'   legend(0,1,c("haha"),bty="n",pch=22,lty=1,lwd=1)
-#'   legend(0,0.8,c("lala","baba"),bty="n",pch=19, col=c(2,3))
-#' },
-#' plt=c(0.2,0.95,0.2,0.9),legend.plt.x=0.8
-#')
+#' )
+#'
+#' template1(
+#'  function(){
+#'    plot(1:10,1:10,type="o",pch=22, xlab="x",ylab="y")
+#'    points(1:10,10:1,col=2,pch=19)
+#'    points(1:10,c(9:5,5:9),col=3,pch=19)
+#'  },
+#'  function(){
+#'    legend(0,1,c("haha"),bty="n",pch=22,lty=1,lwd=1)
+#'    legend(0,0.8,c("lala","baba"),bty="n",pch=19, col=c(2,3))
+#'  },
+#'  plt=c(0.2,0.95,0.2,0.9),legend.plt.x=0.8
+#' )
 
 
 
