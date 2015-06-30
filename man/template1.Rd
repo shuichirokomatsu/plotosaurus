@@ -16,6 +16,9 @@ template1(func, legend.func, plt = c(0.2, 0.95, 0.4, 0.9),
 
 \item{legend.plt.x}{The plt x value that separates between the plot and legend regions. Decrease this if you run out of space for the legend.}
 }
+\value{
+a list of the returned values from the two functions, if they exist.
+}
 \description{
 This function allows a templated plot in which the legend is nicely placed outside the plot region.
 }
