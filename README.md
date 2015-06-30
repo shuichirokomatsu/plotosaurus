@@ -7,4 +7,5 @@
 
 ### functions
       template1() : This function allows a templated plot in which the legend is nicely placed outside the plot region.
+      pngpdf() : This function generates both png and pdf files for a given plot function.
       
