@@ -36,4 +36,6 @@ lines(y,col=2)
 \seealso{
 ecdf {stats}
 }
+\keyword{histogram}
+\keyword{plot}
 

@@ -10,6 +10,8 @@
 #' @param skip.png If this is true, only pdf file will be generated. Defaults to FALSE.
 #' @param nplots The number of plots to be included in one page of the png file, stacked vertically. This is useful when producing a multi-page pdf file, since png does not support multi-page plotting. Each plot in the pdf and png files will not look exactly the same, so it is generally recommended to produce a single-page pdf and png. If nplots is larger than 6, it may not be able to generate a png file. In that case, try lowering png.res (resolution). Defaults to 1.
 #' @param png.res The resolution of png. Defaults to 600.
+#' @keywords plot png pdf
+#' @export
 #' @return the returned value from plot.func will be returned.
 #' @examples
 #'

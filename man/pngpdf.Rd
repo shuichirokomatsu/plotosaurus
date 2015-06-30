@@ -37,4 +37,7 @@ pngpdf(function(){
   plot(1:10,1:10,type="o",pch=19,col=3)
 },"myplot")
 }
+\keyword{pdf}
+\keyword{plot}
+\keyword{png}
 
