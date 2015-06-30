@@ -20,6 +20,7 @@ template1(func, legend.func, plt = c(0.2, 0.95, 0.4, 0.9),
 This function allows a templated plot in which the legend is nicely placed outside the plot region.
 }
 \examples{
+# example 1
 template1(
  function(){
    plot(1:10,1:10,type="o",pch=22, xlab="x",ylab="y")
@@ -32,6 +33,7 @@ template1(
 }
 )
 
+# example 2
 template1(
  function(){
    plot(1:10,1:10,type="o",pch=22, xlab="x",ylab="y")
