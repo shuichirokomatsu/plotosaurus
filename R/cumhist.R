@@ -7,6 +7,7 @@
 #' @param ylab ylab. Defaults to 'Cumulative fraction".
 #' @param ... Additional plotting parameters.
 #' @return if plot=FALSE, then a data frame is returned. (see argument: plot)
+#' @seealso stats::ecdf
 #' @examples
 #'
 #' # example 1

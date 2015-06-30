@@ -33,4 +33,7 @@ y = cumhist(runif(1000,-2,2),plot=F)
 plot(x,type="l",col=1)
 lines(y,col=2)
 }
+\seealso{
+stats::ecdf
+}
 
