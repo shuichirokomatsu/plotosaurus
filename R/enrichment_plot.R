@@ -6,11 +6,12 @@
 #' @param obs.col the name or index of the column representing observed value. Defaults to 'obs'.
 #' @param pval.col the name or index of the column representing expected value. Defaults to 'pval'.
 #' @param combined.pval a vector of p-values. If provided, significant ones will be marked with '+'.
-#' @param pval.thres p-value threshold for calling significant.
+#' @param pval.thres p-value threshold for calling significant. Defaults to 0.05.
+#' @param ylab y-axis label. Defaults to ''.
 #' @param scale.expansion a graphical parameter that extends y-axis so that '*' and '+' can be displayed. Defaults to 1.1.
-#' @param bar.color a vector of two elements, each representing the color of expected and observed.
-#' @param ratio.color a vector of k elements, where k must be at least the length of mat.list (number of groups).
-#' @param class.space spacing between groups for the ratio plot when multiple groups are plotted.
+#' @param bar.color a vector of two elements, each representing the color of expected and observed. Defaults to c("indianred1","violetred").
+#' @param ratio.color a vector of k elements, where k must be at least the length of mat.list (number of groups). Defaults to c("dodgerblue","red","gold","green3")
+#' @param class.space spacing between groups for the ratio plot when multiple groups are plotted. Defaults to 0.5.
 #' @keywords plot enrichment barplot p-value pvalue
 #' @export
 #' @examples
@@ -30,7 +31,7 @@
 #'
 
 
-enrichment_plot <- function( mat.list, exp.col="exp",obs.col="obs",pval.col="pval", combined.pval=NULL, pval.thres=0.05, scale.expansion=1.1,bar.color=c("indianred1","violetred"),ratio.color=c("dodgerblue","red","gold","green3"), class.space=0.5){
+enrichment_plot <- function( mat.list, exp.col="exp",obs.col="obs",pval.col="pval", combined.pval=NULL, pval.thres=0.05, ylab="", scale.expansion=1.1,bar.color=c("indianred1","violetred"),ratio.color=c("dodgerblue","red","gold","green3"), class.space=0.5){
 
    if(length(ratio.color)<length(mat.list)) stop("The length of ratio.color must be at least the length of mat.list")
 
@@ -50,7 +51,7 @@ enrichment_plot <- function( mat.list, exp.col="exp",obs.col="obs",pval.col="pva
       
       
         bar.space= c(c(0.2,0),rep(c(rep(c(0.2,0),ngroups-1),c(1,0)),length(mat.list)-1),rep(c(0.2,0),ngroups-1))
-        mp = barplot(t(mat),beside=T,space=bar.space,las=2,ylab="number of mutations",ylim=ylim,col=bar.color)
+        mp = barplot(t(mat),beside=T,space=bar.space,las=2,ylab=ylab,ylim=ylim,col=bar.color)
       
         L=0
         for(i in 1:length(mat.list)){
