@@ -10,13 +10,16 @@
 ### calling package before use
      library(Soo.plot.base)
 
+### Dependencies
+     package vioplot : required for function vioplot_list.
+
 ### functions
-      template1() : This function allows a templated plot in which the legend is nicely placed outside the plot region.
-      pngpdf() : This function generates both png and pdf files for a given plot function.
+      template1 : This function allows a templated plot in which the legend is nicely placed outside the plot region.
+      pngpdf : This function generates both png and pdf files for a given plot function.
       
-      cumhist() : This function either plots an unsmoothed cumulative histogram or returns a data frame that can be used to plot such a cumulative histogram.
-      plot_rainbowlines() : This function generates a single plot with multiple lines of rainbow colors, given a list of matrices(or data frames).
-      vioplot_list() : This function generates a series of violins in one plot, given a list of numeric vectors. It requires package vioplot.
+      cumhist : This function either plots an unsmoothed cumulative histogram or returns a data frame that can be used to plot such a cumulative histogram.
+      plot_rainbowlines : This function generates a single plot with multiple lines of rainbow colors, given a list of matrices(or data frames).
+      vioplot_list : This function generates a series of violins in one plot, given a list of numeric vectors. It requires package vioplot.
 
 
 
