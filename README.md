@@ -10,7 +10,7 @@
 ### calling package before use
      library(Soo.plot.base)
 
-### Dependencies
+### dependencies
      package vioplot : required for function vioplot_list.
 
 ### functions
