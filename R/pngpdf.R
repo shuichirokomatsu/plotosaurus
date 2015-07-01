@@ -24,7 +24,7 @@
 pngpdf<-function(plot.func,fprefix,width=7,height=7,pointsize=12,add.date=TRUE,skip.png=FALSE,nplots=1,png.res=600){
 
   if(add.date==TRUE){ date.tag=paste(".",gsub("-","",Sys.Date()),sep="")  ## eg. ".20141209"
-  } else { data.tag="" }
+  } else { date.tag="" }
 
   if(skip.png==FALSE){
     png(paste(fprefix,date.tag,".png",sep=""),width=width,height=height*nplots,pointsize=pointsize*(nplots^0.3),unit="in",res=png.res)
