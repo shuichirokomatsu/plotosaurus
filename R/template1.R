@@ -6,6 +6,7 @@
 #' @param	plt this defines the plot (box) region and the legend region together. plt=c(x1,x2,y1,y2). e.g. Increase plt[3] if you run out of space for the x labels. Decrease plt[4] if you run out of space for the plot title. Defaults to c(0.2,0.95,0.4,0.9).
 #' @param	legend.plt.x The plt x value that separates between the plot and legend regions. Decrease this if you run out of space for the legend.
 #' @keywords plot template
+#' @export
 #' @return a list of the returned values from the two functions, if they exist.
 #' @examples
 #' # example 1
