@@ -9,7 +9,7 @@
 #' @keywords plot histogram
 #' @export
 #' @return if plot=FALSE, then a data frame is returned. (see argument: plot)
-#' @seealso ecdf {stats}
+#' @seealso stats::ecdf
 #' @examples
 #'
 #' # example 1
