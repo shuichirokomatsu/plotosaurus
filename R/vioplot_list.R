@@ -13,6 +13,7 @@
 #' @param ylab y-axis label. Defaults to ''.
 #' @param main title of the plot. Defaults to ''.
 #' @keywords plot violinplot boxplot
+#' @details This function requires package vioplot.
 #' @export
 #' @examples
 #'

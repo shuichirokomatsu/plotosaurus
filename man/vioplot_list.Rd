@@ -34,6 +34,9 @@ vioplot_list(x, horizontal = FALSE, axes = TRUE, Range = range(x, na.rm =
 \description{
 This function generates a series of violins in one plot, given a list of numeric vectors.
 }
+\details{
+This function requires package vioplot.
+}
 \examples{
 # list without names
 x=list(rnorm(1000),rnorm(1000,2,3),rnorm(1000,2,1))
