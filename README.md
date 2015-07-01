@@ -7,6 +7,10 @@
      library("devtools")
      devtools::install_github("SooLee/Soo.plot.base")
      
+     or
+     
+     install_url("https://github.com/SooLee/Soo.plot.base/archive/0.9.0.zip") ## recommended
+     
 ### calling package before use
      library(Soo.plot.base)
 
