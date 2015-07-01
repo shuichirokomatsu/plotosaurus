@@ -22,7 +22,7 @@
 #' mat3=data.frame(exp=c(3,2,1.2,2),obs=c(2.8,2,1.3,2),pval=c(0.5,0.2,0.01,0.6))
 #' mat.list=list(early=mat1,mid=mat2,late=mat3)
 #' combined.pval=c(0.2,0.5,0.01,0.6)
-#' enrichment_plot(mat.list, combined.pval=combined.pval)
+#' enrichment_plot(mat.list, combined.pval=combined.pval, ylab="number of mutations")
 #'
 #' # example 2 (one group, without combined p-values)
 #' mat1=data.frame(exp=c(2,3,4,1),obs=c(1.9,3,4.1,1.2),pval=c(0.1,0.2,0.02,0.002))
