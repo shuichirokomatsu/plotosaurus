@@ -4,9 +4,9 @@
 \alias{plot_rainbowlines}
 \title{A plot function}
 \usage{
-plot_rainbowlines(mat.list, samplenames = NULL, color = NULL, xlab = "x",
-  ylab = "y", main = "", cex.legend = 1, template1.args = NULL,
-  add.func = NULL, ...)
+plot_rainbowlines(mat.list, samplenames = NULL, color = NULL, lty = 1,
+  lwd = 1, xlab = "x", ylab = "y", main = "", cex.legend = 1,
+  template1.args = NULL, add.func = NULL, ...)
 }
 \arguments{
 \item{mat.list}{a list of two-column matrices or two-column data frames.}
@@ -14,6 +14,10 @@ plot_rainbowlines(mat.list, samplenames = NULL, color = NULL, xlab = "x",
 \item{samplenames}{a vector of names that will be used as the legend.text. The length of samplenames must be the same. If not specified, the names of mat.list will be used. Defaults to NULL.}
 
 \item{color}{a vector of colors that will be used for the plots. The length of color must be the same as the length of mat.list. If not specified, rainbow colors will be used automatically. Defaults to NULL.}
+
+\item{lty}{line type.}
+
+\item{lwd}{line width.}
 
 \item{xlab}{x-axis label. Defaults to 'x'.}
 
@@ -25,7 +29,7 @@ plot_rainbowlines(mat.list, samplenames = NULL, color = NULL, xlab = "x",
 
 \item{add.func}{an additional function to add to the plot (eg. abline).}
 
-\item{...}{other graphical parameters including lwd, lty, etc.}
+\item{...}{other graphical parameters.}
 
 \item{template1.arg}{list of parameters for template1(), such as legend.plt.x.}
 }
