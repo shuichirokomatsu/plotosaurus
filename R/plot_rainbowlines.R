@@ -22,18 +22,18 @@
 #'
 #' # plot 1
 #' mat.list = list("sd=1"=cumhist(rnorm(1000),plot=F),"sd=2"=cumhist(rnorm(2000,sd=2),plot=F))
-#' plot.rainbowlines(mat.list)
+#' plot_rainbowlines(mat.list)
 #' 
 #' # plot 2
-#' plot.rainbowlines(mat.list,c("sd=1","sd=2"),color=c("violet","dodgerblue"),ylab="Cumulative fraction",main="Gaussian",lwd=2)
+#' plot_rainbowlines(mat.list,c("sd=1","sd=2"),color=c("violet","dodgerblue"),ylab="Cumulative fraction",main="Gaussian",lwd=2)
 #' 
 #' # plot 3
 #' mat.list = lapply(1:10, function(sd) cumhist(rnorm(10000,sd=sd),plot=F) )
 #' legend.text = paste("sd=",1:10,sep="")
-#' plot.rainbowlines(mat.list,legend.text,x="values",ylab="Cumulative fraction",main="Gaussian",template1.args=list(legend.plt.x=0.8),add.func=function(){abline(h=0.5,lty=2)})
+#' plot_rainbowlines(mat.list,legend.text,x="values",ylab="Cumulative fraction",main="Gaussian",template1.args=list(legend.plt.x=0.8),add.func=function(){abline(h=0.5,lty=2)})
 #'
 
-plot.rainbowlines<-function(mat.list,samplenames=NULL,color=NULL,xlab="x",ylab="y",main="",cex.legend=1,template1.args=NULL,add.func=NULL,...){
+plot_rainbowlines<-function(mat.list,samplenames=NULL,color=NULL,xlab="x",ylab="y",main="",cex.legend=1,template1.args=NULL,add.func=NULL,...){
 
  # set colors
  offset = floor(length(mat.list)/2)  ## this offset ensures that the first and last colors are not too similar.
