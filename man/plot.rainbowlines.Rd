@@ -25,6 +25,8 @@
 
 \item{add.func}{an additional function to add to the plot (eg. abline).}
 
+\item{...}{other graphical parameters including lwd, lty, etc.}
+
 \item{template1.arg}{list of parameters for template1(), such as legend.plt.x.}
 }
 \value{

@@ -10,6 +10,7 @@
 #' @param cex.legend the cex of the legend. Reduce this if you run out of vertical space for legend. Defaults to 1.
 #' @param template1.arg list of parameters for template1(), such as legend.plt.x.
 #' @param add.func an additional function to add to the plot (eg. abline).
+#' @param ... other graphical parameters including lwd, lty, etc.
 #' @keywords plot rainbow lines
 #' @export
 #' @return a vector of colors used.
@@ -54,7 +55,7 @@ plot.rainbowlines<-function(mat.list,samplenames=NULL,color=NULL,xlab="x",ylab="
  func <- function(){
      plot.new()
      plot.window(xlim,ylim)
-     mapply(function(mat,col){lines(mat[,1],mat[,2],col=col,...)},mat.list,color,...)
+     mapply(function(mat,col,...){lines(mat[,1],mat[,2],col=col,...)},mat.list,color,...)
      box();axis(1);axis(2)
      mtext(xlab,side=1,line=mgp[1])
      mtext(ylab,side=2,line=mgp[1])
