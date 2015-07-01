@@ -34,7 +34,7 @@ plot(x,type="l",col=1)
 lines(y,col=2)
 }
 \seealso{
-ecdf {stats}
+stats::ecdf
 }
 \keyword{histogram}
 \keyword{plot}
