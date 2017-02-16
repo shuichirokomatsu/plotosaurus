@@ -15,7 +15,7 @@
      library(plotsaurus)
 
 ### dependencies
-     package vioplot : required for function vioplot_list.
+     package vioplot : required for function vioplot_list. (Currently unused)
 
 ### functions
       *Wrappers*
@@ -38,7 +38,7 @@
       
       *Lower-level plots*
       cumhist : This function either plots an unsmoothed cumulative histogram or returns a data frame that can be used to plot such a cumulative histogram.
-      vioplot_list : This function generates a series of violins in one plot, given a list of numeric vectors. It requires package vioplot.
+      vioplot_list : This function generates a series of violins in one plot, given a list of numeric vectors. It requires package vioplot. (not used)
 
       *Plot components*
       exp_axis : This function generates an axis with a label in an exponential form, given a log-scale range.
