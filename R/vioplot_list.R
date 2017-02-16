@@ -14,7 +14,8 @@
 #' @param main title of the plot. Defaults to ''.
 #' @keywords plot violinplot boxplot
 #' @details This function requires package vioplot.
-#' @import vioplot sm
+#' @import vioplot
+#' @importFrom sm sm.density
 #' @export
 #' @examples
 #'
