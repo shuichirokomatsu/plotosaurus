@@ -3,6 +3,7 @@ Title: Plotosaurus
 Version: 0.9.1
 Authors@R: person("Soo", "Lee", email = "duplexa@gmail.com", role = c("aut", "cre"))
 Description: Wrappers, templates and layouts for various plots
+Imports: graphics, vioplot
 Depends:
     R (>= 2.15.0)
 License: file LICENSE
