@@ -14,6 +14,7 @@
 #' @param class.space spacing between groups for the ratio plot when multiple groups are plotted. Defaults to 0.5.
 #' @keywords plot enrichment barplot p-value pvalue
 #' @export
+#' @import graphics
 #' @examples
 #'
 #' # example 1 (multiple groups, with combined p-values)
