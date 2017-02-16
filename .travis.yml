@@ -4,3 +4,5 @@ r:
   - release
   - devel
   - oldrel
+r_packages:
+  - vioplot
