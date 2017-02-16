@@ -10,7 +10,7 @@
 #' @param ylab y-axis label. Defaults to 'y'.
 #' @param main title. Defaults to ''.
 #' @param cex.legend the cex of the legend. Reduce this if you run out of vertical space for legend. Defaults to 1.
-#' @param template1.arg list of parameters for template1(), such as legend.plt.x.
+#' @param template1.args list of parameters for template1(), such as legend.plt.x.
 #' @param add.func an additional function to add to the plot (eg. abline).
 #' @param ... other graphical parameters.
 #' @keywords plot rainbow lines

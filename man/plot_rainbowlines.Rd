@@ -27,11 +27,11 @@ plot_rainbowlines(mat.list, samplenames = NULL, color = NULL, lty = 1,
 
 \item{cex.legend}{the cex of the legend. Reduce this if you run out of vertical space for legend. Defaults to 1.}
 
+\item{template1.args}{list of parameters for template1(), such as legend.plt.x.}
+
 \item{add.func}{an additional function to add to the plot (eg. abline).}
 
 \item{...}{other graphical parameters.}
-
-\item{template1.arg}{list of parameters for template1(), such as legend.plt.x.}
 }
 \value{
 a vector of colors used.

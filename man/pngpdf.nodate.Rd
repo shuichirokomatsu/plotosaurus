@@ -4,12 +4,12 @@
 \alias{pngpdf.nodate}
 \title{A wrapper function for pngpdf().}
 \usage{
-pngpdf.nodate(f, ...)
+pngpdf.nodate(plot.func, ...)
 }
 \arguments{
-\item{...}{Other parameters to pass on to pngpdf.}
-
 \item{plot.func}{Any plotting function.}
+
+\item{...}{Other parameters to pass on to pngpdf.}
 }
 \value{
 the returned value from plot.func will be returned.

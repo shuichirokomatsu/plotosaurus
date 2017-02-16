@@ -16,8 +16,8 @@
 #' cumhist(rnorm(1000))
 #' 
 #' # example 2
-#' x = cumhist(rnorm(1000),plot=F)
-#' y = cumhist(runif(1000,-2,2),plot=F)
+#' x = cumhist(rnorm(1000),plot=FALSE)
+#' y = cumhist(runif(1000,-2,2),plot=FALSE)
 #' plot(x,type="l",col=1)
 #' lines(y,col=2)
 #'

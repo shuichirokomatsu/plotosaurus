@@ -13,6 +13,6 @@
 #' },"myplot")
 #'
 
-pngpdf.nodate <- function(f,...) pngpdf(f,...,add.date=FALSE)
+pngpdf.nodate <- function(plot.func, ...) pngpdf(plot.func, ..., add.date=FALSE)
 
 
