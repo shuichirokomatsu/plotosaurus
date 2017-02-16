@@ -34,7 +34,7 @@ pngpdf<-function(plot.func,fprefix,width=7,height=7,pointsize=12,add.date=TRUE,s
   } else {
 
     if(skip.png==FALSE){
-      png(paste(fprefix,date.tag,".png",sep=""),width=width,height=height*nplots,pointsize=pointsize*(nplots^0.3),unit="in",res=png.res)
+      png(paste(fprefix,date.tag,".png",sep=""),width=width,height=height*nplots,pointsize=pointsize*(nplots^0.3),units="in",res=png.res)
       par(mfrow=c(nplots,1))
       plot.func()
       dev.off()
