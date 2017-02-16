@@ -1,5 +1,5 @@
 ## Plotosaurus
-
+* Note: package Soo.plot.base (<=0.9.0) is now Plotosaurus (>=0.9.1).
 
 ##### Note : example plots are in the 'images' directory.
 
