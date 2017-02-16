@@ -5,7 +5,7 @@
 \title{A plot function}
 \usage{
 vioplot_list(x, horizontal = FALSE, axes = TRUE, Range = range(x, na.rm =
-  T), add.boxplot = FALSE, drawRect = TRUE, col.vio = "light blue",
+  TRUE), add.boxplot = FALSE, drawRect = TRUE, col.vio = "light blue",
   col.box = 1, xlab = "", ylab = "", main = "")
 }
 \arguments{
@@ -47,9 +47,9 @@ y=list(dist1=rnorm(1000),dist2=rnorm(1000,2,3),dist3=rnorm(1000,2,1))
 
 par(mfrow=c(4,1))
 vioplot_list(x,ylab="value")
-vioplot_list(y,ylab="value",add.boxplot=T,col.vio="green3", drawRect=F)
-vioplot_list(y,ylab="value",col.vio=1,drawRect=F)
-vioplot_list(y,xlab="value",col.vio=1,drawRect=F,horizontal=T)
+vioplot_list(y,ylab="value",add.boxplot=TRUE, col.vio="green3", drawRect=F)
+vioplot_list(y,ylab="value",col.vio=1,drawRect=FALSE)
+vioplot_list(y,xlab="value",col.vio=1,drawRect=FALSE, horizontal=TRUE)
 
 }
 \keyword{boxplot}

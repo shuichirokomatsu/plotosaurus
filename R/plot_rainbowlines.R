@@ -23,14 +23,14 @@
 #' par(mfrow=c(3,1))
 #'
 #' # plot 1
-#' mat.list = list("sd=1"=cumhist(rnorm(1000),plot=F),"sd=2"=cumhist(rnorm(2000,sd=2),plot=F))
+#' mat.list = list("sd=1"=cumhist(rnorm(1000),plot=FALSE),"sd=2"=cumhist(rnorm(2000,sd=2),plot=FALSE))
 #' plot_rainbowlines(mat.list)
 #' 
 #' # plot 2
 #' plot_rainbowlines(mat.list,c("sd=1","sd=2"),color=c("violet","dodgerblue"),ylab="Cumulative fraction",main="Gaussian",lwd=2)
 #' 
 #' # plot 3
-#' mat.list = lapply(1:10, function(sd) cumhist(rnorm(10000,sd=sd),plot=F) )
+#' mat.list = lapply(1:10, function(sd) cumhist(rnorm(10000,sd=sd),plot=FALSE) )
 #' legend.text = paste("sd=",1:10,sep="")
 #' plot_rainbowlines(mat.list,legend.text,x="values",ylab="Cumulative fraction",main="Gaussian",template1.args=list(legend.plt.x=0.8),add.func=function(){abline(h=0.5,lty=2)})
 #'
@@ -46,7 +46,7 @@ plot_rainbowlines<-function(mat.list,samplenames=NULL,color=NULL,lty=1,lwd=1,xla
  ylim = range(lapply(mat.list,function(xx)xx[,2]),na.rm=T)
 
  # get the mgp
- mgp=par("mgp",no.readonly=F)
+ mgp=par("mgp",no.readonly=FALSE)
 
  # legend text
  if(is.null(samplenames)) samplenames=names(mat.list)

@@ -39,7 +39,7 @@
 
 
 template1<-function(func,legend.func, plt=c(0.2,0.95,0.4,0.9), legend.plt.x=0.65){
-  old.plt=par("plt",no.readonly=F)
+  old.plt=par("plt",no.readonly=FALSE)
   on.exit(par(plt=old.plt))
   res=list()
   par(plt=c(plt[1],legend.plt.x, plt[3],plt[4]))

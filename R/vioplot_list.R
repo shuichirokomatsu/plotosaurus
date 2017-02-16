@@ -25,18 +25,18 @@
 #' 
 #' par(mfrow=c(4,1))
 #' vioplot_list(x,ylab="value")
-#' vioplot_list(y,ylab="value",add.boxplot=T,col.vio="green3", drawRect=F)
-#' vioplot_list(y,ylab="value",col.vio=1,drawRect=F)
-#' vioplot_list(y,xlab="value",col.vio=1,drawRect=F,horizontal=T)
+#' vioplot_list(y,ylab="value",add.boxplot=TRUE, col.vio="green3", drawRect=F)
+#' vioplot_list(y,ylab="value",col.vio=1,drawRect=FALSE)
+#' vioplot_list(y,xlab="value",col.vio=1,drawRect=FALSE, horizontal=TRUE)
 #'
 
 
-vioplot_list<-function(x, horizontal=FALSE, axes=TRUE, Range=range(x,na.rm=T),add.boxplot=FALSE, drawRect=TRUE, col.vio="light blue", col.box=1, xlab="",ylab="",main=""){  ## version 4
+vioplot_list<-function(x, horizontal=FALSE, axes=TRUE, Range=range(x,na.rm=TRUE),add.boxplot=FALSE, drawRect=TRUE, col.vio="light blue", col.box=1, xlab="",ylab="",main=""){  ## version 4
 
   mgp=par("mgp",no.readonly=F)
 
   plot.new()
-  if(horizontal==F) { plot.window(c(0.5,length(x)+0.5),Range,xaxs="i")
+  if(horizontal==FALSE) { plot.window(c(0.5,length(x)+0.5),Range,xaxs="i")
   } else {  plot.window(Range,c(0.5,length(x)+0.5),yaxs="i") }
   box()
 
@@ -47,13 +47,13 @@ vioplot_list<-function(x, horizontal=FALSE, axes=TRUE, Range=range(x,na.rm=T),ad
   for(i in 1:length(x)){
    yy=x[[i]]
    yy=yy[which(!is.na(yy) & is.finite(yy) & !is.nan(yy))]
-   vioplot(yy, col=col.vio, horizontal=horizontal, at=i, add=TRUE,border=NA, drawRect=drawRect)
-   if(add.boxplot==TRUE) boxplot(yy, border=col.box, horizontal=horizontal, at=i, add=TRUE,axes=F)
+   vioplot(yy, col=col.vio, horizontal=horizontal, at=i, add=TRUE, border=NA, drawRect=drawRect)
+   if(add.boxplot==TRUE) boxplot(yy, border=col.box, horizontal=horizontal, at=i, add=TRUE, axes=FALSE)
   }
 
-  if(axes==T){
+  if(axes==TRUE){
     if(!is.null(names(x))) labels = names(x)  else labels=1:length(x)
-    if(horizontal==F) { axis(1,lwd=0,at=1:length(x),labels=names(x)); axis(2);
+    if(horizontal==FALSE) { axis(1,lwd=0,at=1:length(x),labels=names(x)); axis(2);
     } else { axis(2,lwd=0,at=1:length(x),labels=names(x)); axis(1); }
   }
 }
