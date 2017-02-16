@@ -1,18 +1,18 @@
-## Soo.plot.base
+## Plotosaurus
 
 
 ##### Note : example plots are in the 'images' directory.
 
 ### installation
      library("devtools")
-     devtools::install_github("SooLee/Soo.plot.base")
+     devtools::install_github("SooLee/plotosaurus")
      
      or
      
-     install_url("https://github.com/SooLee/Soo.plot.base/archive/0.9.0.zip") ## recommended
+     install_url("https://github.com/SooLee/plotosarsus/archive/0.9.1.zip") ## recommended
      
 ### calling package before use
-     library(Soo.plot.base)
+     library(plotsaurus)
 
 ### dependencies
      package vioplot : required for function vioplot_list.
@@ -31,6 +31,12 @@
       vioplot_list : This function generates a series of violins in one plot, given a list of numeric vectors. It requires package vioplot.
 
 
+### For developer
+* To build, go to the `plotosaurus` directory, and open an R session.
+```r
+library(devtools)
+document()
+```
 
 
 

@@ -1,8 +1,10 @@
-Package: Soo.plot.base
-Title: What the Package Does (one line, title case)
-Version: 0.9.0
-Authors@R: person("First", "Last", email = "first.last@example.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph)
-Depends: R (>= 2.15.0)
-License: What license is it under?
+Package: plotosaurus
+Title: Plotosaurus
+Version: 0.9.1
+Authors@R: person("Soo", "Lee", email = "duplexa@gmail.com", role = c("aut", "cre"))
+Description: Wrappers, templates and layouts for various plots
+Depends:
+    R (>= 2.15.0)
+License: GNU Public
 LazyData: true
+RoxygenNote: 5.0.1
