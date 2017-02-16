@@ -6,3 +6,4 @@ r:
   - oldrel
 r_packages:
   - vioplot
+  - sm
