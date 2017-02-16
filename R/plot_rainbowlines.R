@@ -15,6 +15,7 @@
 #' @param ... other graphical parameters.
 #' @keywords plot rainbow lines
 #' @export
+#' @importFrom grDevices rainbow
 #' @return a vector of colors used.
 #' @examples
 #' 

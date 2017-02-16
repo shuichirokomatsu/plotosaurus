@@ -18,7 +18,7 @@
 exp_axis<-function(x, axis_ind, n=5){
   at=pretty(x, n)
   at_exp = sapply(at, function(xx)as.expression(bquote(10^ .(xx))))
-  axis(axis_ind, at=at, label=at_exp)
+  axis(axis_ind, at=at, labels=at_exp)
 }
 
 

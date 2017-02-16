@@ -13,6 +13,7 @@
 #' @param display.only If TRUE, display the plot on the screen, and not produce png or pdf.
 #' @keywords plot png pdf
 #' @export
+#' @import grDevices pdf png pdf.options dev.off 
 #' @return the returned value from plot.func will be returned.
 #' @examples
 #'
