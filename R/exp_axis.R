@@ -10,7 +10,7 @@
 #'
 #'  logx=rnorm(100)
 #'  logy=rnorm(100) + logx
-#'  plot(logx, logy, xlab="x", ylab="y", axes=F)
+#'  plot(logx, logy, xlab="x", ylab="y", axes=FALSE)
 #'  exp_axis(range(logx),1)
 #'  exp_axis(range(logy),2)
 #'  box()
