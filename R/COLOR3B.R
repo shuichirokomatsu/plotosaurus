@@ -9,5 +9,5 @@
 #' barplot(1:3, names.arg=c('a','b','c'),ylab="some y",xlab="some x", col=COLOR3B())
 #'
 
-COLORB3 <-function() { c('grey80','grey60',1) }
+COLOR3B <-function() { c('grey80','grey60',1) }
 
