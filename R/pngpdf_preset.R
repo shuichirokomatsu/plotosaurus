@@ -3,8 +3,8 @@
 #' This function takes a list of plot functions that will be passed on to pngpdf, and draws each plot within its corresponding plt region specified by a preset object.
 #' @param plotfuncs List of plot functions.
 #' @param name The prefix of the output png or pdf file.
-#' @param stylefunc A style function that sets up graphic parameters.
-#' @param preset A preset object with the same number of plts as the number of plot functions.
+#' @param stylefunc A style function that sets up graphic parameters. (default: stylefunc0)
+#' @param preset A preset object with the same number of plts as the number of plot functions. (default: get_preset(length(plotfuncs)), works only up to 3 plots with the default.)
 #' @param ... Other parameters to be passed on to pngpdf()
 #' @keywords plot layout
 #' @export
@@ -31,17 +31,19 @@
 #' )
 #'
 
-pngpdf_preset<-function(plotfuncs, name, stylefunc, preset, ...){
-  pngpdf( function(){
-     stylefunc()
-     par(plt =preset$plts[[1]]) 
-     plotfuncs[[1]]()
-     if(length(plotfuncs)>1){
-        for(i in 2:length(plotfuncs)){
-           par(new=T, plt = preset$plts[[i]])
-           plotfuncs[[i]]()
+pngpdf_preset<-function (plotfuncs, name, stylefunc=stylefunc0, preset=get_preset(length(plotfuncs)), ...) 
+{
+    pngpdf(function() {
+        retn=list()
+        stylefunc()
+        par(plt = preset$plts[[1]])
+        retn[[1]] = plotfuncs[[1]]()
+        if (length(plotfuncs) > 1) {
+            for (i in 2:length(plotfuncs)) {
+                par(new = T, plt = preset$plts[[i]])
+                retn[[i]] = plotfuncs[[i]]()
+            }
         }
-     }
-  }, name, width = preset$width, height= preset$height, ...)
+        return(retn);
+    }, name, width = preset$width, height = preset$height, ...)
 }
-

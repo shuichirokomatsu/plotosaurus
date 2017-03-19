@@ -4,7 +4,8 @@
 \alias{pngpdf_preset}
 \title{Function that wraps pngpdf using a 'preset', to create a figure with a specific predefined layout.}
 \usage{
-pngpdf_preset(plotfuncs, name, stylefunc, preset, ...)
+pngpdf_preset(plotfuncs, name, stylefunc = stylefunc0,
+  preset = get_preset(length(plotfuncs)), ...)
 }
 \arguments{
 \item{plotfuncs}{List of plot functions.}
